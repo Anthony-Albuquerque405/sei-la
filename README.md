@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔴 Pokédex - Next.js
 
-## Getting Started
+Uma aplicação moderna e responsiva simulando uma Pokédex, construída com **Next.js** e inspirada no universo (anime) de Pokémon. Ela consome dados diretamente da [PokéAPI](https://pokeapi.co/) para exibir informações, tipos, habilidades e estatísticas de combate (Stats) dos Pokémons.
 
-First, run the development server:
+## ✨ Funcionalidades
 
+- **Design Temático de Anime:** Interface moderna com toques que remetem à clássica Pokédex (Cores vibrantes, badges tipificados, luzes de sinalização).
+- **Cartas Interativas:** Cartões dos Pokémons com design "Glassmorphism", animações suaves de _hover_ e visualização em grade.
+- **Barra de Stats Inteligente:** Exibição do nível de força de cada atributo através de barras de progresso que mudam de cor conforme o valor.
+- **Paginação (Catálogo Infinito):** Carregamento de Pokémons em lotes (20 por vez) com um botão dinâmico de "Carregar Mais", otimizando o tempo de carregamento da página.
+- **Design Responsivo:** Totalmente otimizado para celulares, tablets e desktops utilizando Tailwind CSS.
+
+## 🚀 Tecnologias Utilizadas
+
+- **[Next.js](https://nextjs.org/)** - Framework React (App Router)
+- **[React](https://reactjs.org/)** - Biblioteca de Interfaces (Hooks, UseState, UseEffect, UseCallback)
+- **[Tailwind CSS](https://tailwindcss.com/)** - Estilização utilitária avançada e responsividade
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática
+- **[PokéAPI](https://pokeapi.co/)** - API REST para fornecimento dos dados dos Pokémons
+
+## 🛠️ Como Executar o Projeto
+
+Siga as instruções abaixo para rodar o projeto localmente na sua máquina:
+
+### 1. Pré-requisitos
+Você precisa ter o [Node.js](https://nodejs.org/) instalado.
+
+### 2. Clonar / Baixar
+Faça o download do código-fonte ou clone o repositório em sua máquina.
+
+### 3. Instalar Dependências
+Abra o terminal na pasta raiz do projeto e execute:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Variáveis de Ambiente
+Crie um arquivo `.env` na raiz do projeto (se não existir) e configure a base da API:
+```env
+URL_BASE=https://pokeapi.co/api/v2
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 5. Iniciar o Servidor de Desenvolvimento
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação rodando!
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Feito com dedicação e estilo de mestre Pokémon!* 🧢⚡
